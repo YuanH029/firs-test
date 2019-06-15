@@ -1,0 +1,46 @@
+/*设置默认采用样式*/
+html {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+/*设置简历总体布局大小、外框风格*/
+body {
+    margin: 1% auto;
+    padding-left: 2em;
+    border: 1px solid #BDBDBD; 
+    height: 80em;
+    width: 55em;
+    line-height: 2;
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+}
+/*设置ul基本样式*/
+.info,
+.exper {
+    padding-left: 0;  
+}
+/*设置基本信息及联系方式的列表样式*/
+.info li {
+    display: inline-block;
+}
+/*设置能力及经历样式*/
+.exper li {
+    display: block;
+}
+/*设置奇数列表,即表名显示加粗*/
+li:nth-of-type(2n+1) {
+  font-weight: 700;
+}
+/*设置偶数列表，即内容显示不加粗及间隔范围*/
+li:nth-of-type(2n) {
+  font-weight: 500;
+  padding-right: 2em;
+}

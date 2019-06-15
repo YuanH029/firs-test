@@ -1,0 +1,64 @@
+/*疑问：如何设置单元格大小占比？？*/
+
+/*设置默认采用样式*/
+html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*设置简历总体布局大小、外框风格*/
+body {
+    diaplay:table;
+    height: 40em;
+    width: 45em;
+    border: 1px solid gray;
+    margin: 1% auto;
+    line-height: 2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+/*设置左侧风格大小、布局*/
+.title {
+  display: inline-block;
+  width: 100%;
+  height: 15%;
+  background-color: #9E9E9E;
+  color: #FFFFFF;
+}
+/*设置右侧表格展示方式，采用display:table方式模拟表格*/
+.row {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+  border:1px solid white;
+  background: #F5F5F5;
+}
+.cell:nth-of-type(2n+1) {
+  padding: 0 1em;
+  background: #E0E0E0;
+}
+.cell:nth-of-type(2n) {
+  padding: 0 1em;
+  text-align: left;
+}
+
+/*设置ul基本样式*/
+.info,.exper{
+  padding-left:0;  
+}
+/*设置列表样式*/
+.info li,.exper li{
+  display:inline-block;
+}
+/*设置奇数列表,即表名显示加粗*/
+li:nth-of-type(2n+1) {
+  font-weight: 700;
+}
+/*设置偶数列表，即内容显示不加粗及间隔范围*/
+li:nth-of-type(2n) {
+  font-weight: 500;
+  padding-right: 2em;
+}
