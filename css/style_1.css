@@ -7,7 +7,10 @@ html {
     color: black;
 }
 /*设置简历总体布局大小、外框风格*/
-body {
+button {
+    margin-left: 2em;
+}
+#container {
     margin: 1% auto;
     padding-left: 2em;
     border: 1px solid #BDBDBD; 
