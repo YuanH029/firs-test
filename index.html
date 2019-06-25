@@ -12,23 +12,29 @@
     </head>
 
     <body>
+    	<section class="choice">
+    		<button>样式一</button>
+    		<button>样式二</button>
+    		<button>样式三</button>
+    	</section>
+      <div id="container">
     	<div class="title">
     	    <h1>简历</h1>
     	</div>
     	<div class="content">
-        <div class="row">
+         <div class="row">
           <div class="cell">
-    		    <h2>基本信息</h2>
+    		<h2>基本信息</h2>
           </div>
           <div class="cell">
-    		    <ul class="info">
+    	    <ul class="info">
              <li>姓名</li>
              <li>张三</li>
-    			   <li>性别</li>
+    		 <li>性别</li>
              <li>男</li>
-    			   <li>应聘职位</li>
+    		 <li>应聘职位</li>
              <li>Web前端工程师</li>
-    		   </ul>
+    		</ul>
     	   </div>
         </div>
     	  <div class="row">
@@ -40,7 +46,7 @@
               <li>手机</li>
               <li>12312341234</li>
     			    <li>Email</li> 
-             <li><a href="mailto:joinefe@baidu.com">joinefe@baidu.com"</a></li>
+             <li><a href="mailto:joinefe@baidu.com">joinefe@baidu.com</a></li>
     			    <li>个人主页</li>
               <li><a href="https://github.com/">Github</a></li>
     		    </ul>
@@ -89,6 +95,18 @@
           </div>
     	  </div>
       </div>
+  </div>
+<!--非原创，用于显示不同样式，参考：https://github.com/AssassinZed/IFE2018/tree/master/Academy1/Day5-6/src-->
+    <script>   
+        var link = document.querySelector('link');
+        var buttonList = document.querySelectorAll('button');
+        buttonList.forEach(function (value, index) {
+            value.onclick = function () {
+                link.href = './css/style_' + (index + 1) + '.css'  // () is necessary
+            }
+        })
+    </script>
+
     </body>
 </html>
 

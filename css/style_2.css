@@ -10,7 +10,7 @@ button {
     margin-left: 2em;
 }
 /*设置简历总体布局大小、外框风格*/
-body {
+#container {
     margin: 1% auto;
     border: 1px solid #BDBDBD; 
     height: 80em;
