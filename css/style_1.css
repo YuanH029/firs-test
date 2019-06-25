@@ -7,21 +7,24 @@ html {
     color: black;
 }
 /*设置简历总体布局大小、外框风格*/
-body {
+
+button {
+    display: inline-block;   
+    margin: 2em;
+}
+#container {
     margin: 1% auto;
-    padding-left: 2em;
-    border: 1px solid #BDBDBD; 
     height: 80em;
     width: 55em;
+    border: 1px solid #BDBDBD; 
+    padding-left: 2em;
     line-height: 2;
 }
 
 h1 {
-    text-align:center;
+    text-align: center;
 }
 
-h2 {
-}
 /*设置ul基本样式*/
 .info,
 .exper {
