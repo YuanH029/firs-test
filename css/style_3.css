@@ -7,10 +7,9 @@ html {
     font-family: sans-serif;
 }
 /*设置简历总体布局大小、外框风格*/
-body {
-    diaplay:table;
-    height: 40em;
-    width: 45em;
+.container {
+    display:table;
+    width: 70%;
     border: 1px solid gray;
     margin: 1% auto;
     line-height: 2;
@@ -23,7 +22,7 @@ body {
 .title {
   display: inline-block;
   width: 100%;
-  height: 15%;
+  line-height: 1;
   background-color: #9E9E9E;
   color: #FFFFFF;
 }
